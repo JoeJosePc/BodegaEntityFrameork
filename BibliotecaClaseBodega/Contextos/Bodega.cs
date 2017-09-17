@@ -17,6 +17,9 @@ namespace BibliotecaClaseBodega.Contextos
         public Bodega():base("BodegaDB") { }
         // metodo para ingresar registros a la clase Producto -- mapeado a tabla
         public DbSet<Productos> Productos { get; set; }
+        public DbSet<Marca> Marcas { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
         // para no pluralizar al convertir en tablas de SQL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

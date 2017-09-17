@@ -50,15 +50,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contextos\Bodega.cs" />
+    <Compile Include="Migrations\201709171730062_addtables.cs" />
+    <Compile Include="Migrations\201709171730062_addtables.Designer.cs">
+      <DependentUpon>201709171730062_addtables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709171736212_addtables2.cs" />
+    <Compile Include="Migrations\201709171736212_addtables2.Designer.cs">
+      <DependentUpon>201709171736212_addtables2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709171741589_addtables3.cs" />
+    <Compile Include="Migrations\201709171741589_addtables3.Designer.cs">
+      <DependentUpon>201709171741589_addtables3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelos\BaseEntity.cs" />
+    <Compile Include="Modelos\Categoria.cs" />
+    <Compile Include="Modelos\Marca.cs" />
     <Compile Include="Modelos\Productos.cs" />
+    <Compile Include="Modelos\Proveedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709171730062_addtables.resx">
+      <DependentUpon>201709171730062_addtables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709171736212_addtables2.resx">
+      <DependentUpon>201709171736212_addtables2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709171741589_addtables3.resx">
+      <DependentUpon>201709171741589_addtables3.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
